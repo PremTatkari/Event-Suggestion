@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1 class="display-3">Choose your preferences</h1>
+
+      <form action="/submit" method="POST">
+
+        <input type="checkbox" name="preferences" value="Sports" class="btn-check" id="Sports" >
+        <label class="btn btn-outline-primary" for="Sports">Sports</label>
+        <input type="checkbox" name="preferences" value="Technology" class="btn-check" id="Technology" >
+        <label class="btn btn-outline-primary" for="Technology">Technology</label>
+        <input type="checkbox" name="preferences" value="Cultural" class="btn-check" id="Cultural" >
+        <label class="btn btn-outline-primary" for="Cultural">Cultural</label>
+        <input type="checkbox" name="preferences" value="Historical" class="btn-check" id="Historical" >
+        <label class="btn btn-outline-primary" for="Historical">Historical</label>
+        <input type="checkbox" name="preferences" value="Science" class="btn-check" id="Science" >
+        <label class="btn btn-outline-primary" for="Science">Science</label>
+        <input type="checkbox" name="preferences" value="Gaming" class="btn-check" id="Gaming" >
+        <label class="btn btn-outline-primary" for="Gaming">Gaming</label>
+        <input type="checkbox" name="preferences" value="Music" class="btn-check" id="Music" >
+        <label class="btn btn-outline-primary" for="Music">Music</label>
+        <input type="checkbox" name="preferences" value="Art" class="btn-check" id="Art" >
+        <label class="btn btn-outline-primary" for="Art">Art</label>
+        <input type="checkbox" name="preferences" value="Fashion" class="btn-check" id="Fashion" >
+        <label class="btn btn-outline-primary" for="Fashion">Fashion</label>
+        
+      
+
+      <hr>
+
+      <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+      <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+    </form> 
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
